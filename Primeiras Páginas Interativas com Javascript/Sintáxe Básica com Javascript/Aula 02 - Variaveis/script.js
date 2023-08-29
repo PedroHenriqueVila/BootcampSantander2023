@@ -107,10 +107,15 @@ console.log(5 <= 2);
 
 //Operadores Lógicos - E
 
-
+var e = true && false ;
+console.log(e);
 
 //Operadores Lógicos - Ou
 
-
+var ou = true || false
+console.log(ou)
 
 //Operadores Lógicos - Não
+
+var nao = !true;
+console.log(nao);
