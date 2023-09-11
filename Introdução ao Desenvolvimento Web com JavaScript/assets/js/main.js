@@ -4,17 +4,16 @@ function convertPokemonLi(pokemon) {
     
             <li class="pokemon">
 
-                 <span class="number">#00${pokemon.order}</span>
+                 <span class="number">#${pokemon.number}</span>
                  <span class="name">${pokemon.name}</span>
 
                         <div class="detail">
 
                             <ol class="types">
-                                <li class="type">Grass</li>
-                                <li class="type">Poison</li>
+                                ${pokemon.type.map((type) => `<li class "type">${type}</li>`)}
                             </ol>
 
-                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="${pokemon.name}">
+                            <img src="${pokemon.sprites.other.dream_world.front_default}" alt="${pokemon.name}">
 
                         </div>
                         
