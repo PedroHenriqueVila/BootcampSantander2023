@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 720px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: row;
+}
+
+.card_left, .card_rigth {
+    border: 1px solid blue;
+}
