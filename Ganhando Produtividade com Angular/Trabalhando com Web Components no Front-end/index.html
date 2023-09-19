@@ -6,7 +6,7 @@
     <title>PORTAL DE NOTÍCIAS INTERGALÁCTICO</title>
     <link rel="stylesheet" href="styles/card.css">
     <script src="src/Components/cardNews.js" defer></script>
-    <script src="src/Components/tituloDinamico.js"></script>
+    <script src="src/Components/tituloDinamico.js" defer></script>
 </head>
 <body>
     
@@ -28,7 +28,15 @@
 
     </div>
 
-    <card-news></card-news>
-    <titulo-dinamico></titulo-dinamico>
+    <card-news 
+        autor="Pedro"
+        title="Darth Vader Contrata"
+        link-url="www.google.com"
+        photo="assets/5vfrs.jpg"
+        content="Darth Vader procura densenvolvedores que sabem trabalhar com componentes"
+    >
+    </card-news>
+    <titulo-dinamico titulo = "Noticia Urgente"></titulo-dinamico>
+    
 </body>
 </html>  
