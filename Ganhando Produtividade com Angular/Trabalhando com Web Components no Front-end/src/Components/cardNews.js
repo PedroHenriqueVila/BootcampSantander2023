@@ -47,7 +47,47 @@ class cardNews extends HTMLElement {
     }
  
     styles() {
+       const style = document.createElement("style");
+       style.textContent = `
+            .card {
+            width: 80%;
+            -webkit-box-shadow: 10px 10px 39px 0px rgba(0,0,0,0.38);
+            -moz-box-shadow: 10px 10px 39px 0px rgba(0,0,0,0.38);
+            box-shadow: 10px 10px 39px 0px rgba(0,0,0,0.38);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            }
+            
+            .card_left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 10px;
+            }
+            
+            .card_left > span {
+                font-weight: 400;    
+            }
+            
+            .card_left > a {
+                margin-top: 15px;
+                font-size: 25px;
+                color: black;
+                font-weight: 400;
+                text-decoration: none;
+            }
+            
+            .card_left > p {
+                color: rgb(77, 76, 76);
+            }
+            
+            .card_rigth img {
+                max-width: 100%;
+            }
+        `
 
+       return style;
     }
 }
 
