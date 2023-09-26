@@ -20,7 +20,7 @@ const bot2: robot = {
     name: "mega man",
 }
 
-console.log(bot.id = "2")
+console.log(bot.id = 2)
 
 //Usamos interfaces como tipagem para classes (moldes)
 
