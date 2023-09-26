@@ -70,3 +70,57 @@ let meuProduto: produtoLoja = {
 
 let dados: string[] = ["felipe", "ana"]
 
+//Multitypes
+//Definir mais de um tipo que a array pode receber
+
+let infos: (string | number | false)[] = ["felipe" , 30, false]
+
+
+//Tuplas
+//Vetor multitypes com uma ordem obrigatória
+
+let boleto:[string , number , number] = ["agua" , 30 , 34534]
+
+
+//Arrays métodos
+//Todos os métodos de array em javascript são iguai em typescript
+dados.map
+
+
+//Datas
+//
+let aniversario:Date = new Date("2022-12-01 05:00");
+console.log(aniversario.toString());
+
+
+//Funções
+//Em funções o tipo obrigatório e declarado para as variáveis e para o retorno da função
+function addNumber(x: number,y: number): number{
+    return x + y
+}
+
+let soma: number = addNumber(4,7)
+console.log(soma);
+
+function addToHello(name: string){
+    return `Hello ${name}`;
+}
+
+console.log(addToHello("Felipe"));
+
+//Podendo ser colocado mais de um valor aceito
+function CallToPhone(phone: number | string): number | string {
+    return phone
+}
+
+console.log(CallToPhone(1))
+
+//Assincronas
+
+async function getDataBase(id: number): Promise<number | string> {
+    return "felipe"    
+}
+
+
+
+
