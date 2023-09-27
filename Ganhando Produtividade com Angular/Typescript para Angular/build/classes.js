@@ -5,11 +5,13 @@ Data modifiers
 
 public - Indica que uma propriedade fica pública para ser acessada (por default se nada for declarado ela já e definida)
 private - Indica que uma propriedade só pode ser acessada por dentro da classe
-protected -
+protected - Indica que uma propriedade só pode ser acessado dentro da classe e classes que herdam essa mesma (subclasse)
+
+[podem ser usados em metodos como o attack()]
 */
 class character {
-    constructor(strength, skill) {
-        // this.name = name
+    constructor(name, strength, skill) {
+        this.name = name;
         this.strength = strength;
         this.skill = skill;
     }
@@ -17,5 +19,15 @@ class character {
         console.log(`Attack with ${this.strength}`);
     }
 }
-const p1 = new character(10, 98);
+//Subclasses
+//character = superclass
+//magician = subclass
+class magician extends character {
+    constructor(name, strength, skill, magicPoints) {
+        super(name, strength, skill);
+        this.magicPoints = magicPoints;
+    }
+}
+const p1 = new character("Ryu", 10, 98);
+const p2 = new magician("mago", 50, 100, 200);
 p1.attack();
