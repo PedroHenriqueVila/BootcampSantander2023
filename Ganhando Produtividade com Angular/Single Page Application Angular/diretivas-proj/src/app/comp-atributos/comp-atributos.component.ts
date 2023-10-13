@@ -9,8 +9,15 @@ export class CompAtributosComponent implements OnInit {
 
   estilo: string ="enable"
   corFundo: string="red"
+  corDaFonte: string="yellow"
+  item: string=""
+  lista: string[] = []
 
   constructor() { }
+
+  adicionarLista(){
+    this.lista.push(this.item)
+  }
 
   ngOnInit(): void {
   }
